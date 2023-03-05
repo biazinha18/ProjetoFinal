@@ -1,0 +1,39 @@
+*{
+    font-family:'Courier New', Courier, monospace;
+    font-size: 25px;
+    background-color: rgba(248, 204, 236, 0.894);
+}
+
+h1{
+    text-align: center;
+}
+
+.div_nome{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(243, 158, 217);
+    padding: 5px;
+}
+
+input{
+    width: 200px auto;
+    height: auto;
+    text-align: center;
+    border-color: rgb(255, 240, 248);
+}
+label{
+    background-color: rgb(255, 255, 255);
+}
+
+button {
+    border-color: aliceblue;
+    border-radius: 4px ;
+    color: aliceblue;
+    background-color: rgba(245, 125, 187, 0.894);
+    margin: 10px;   
+}
+
+button:hover {
+    background-color: rgb(241, 115, 199);
+}

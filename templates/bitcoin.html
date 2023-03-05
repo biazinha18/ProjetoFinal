@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="{{url_for('static', filename='js/script.js')}}"></script>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/style.css')}}">
+    <title>Bitcoin Price</title>
+</head>
+<body>
+
+    <div class="bitcoin_image">
+        <img src="../static/images/bitcoin_icon.webp">
+    </div>
+
+    <div class="box_preco">
+        <h1>Carregado via Flask + Jinja</h1>
+        {% for key, value in values.items() %}
+            <label>{{ key }}</label>
+            <input value="{{ value }}" disabled>
+        {% endfor %}
+    </div>
+
+    <div class="box_preco" id="load_ajax">
+        <h1>Carregado via Ajax</h1>
+
+    </div>
+    
+    
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="{{url_for('static', filename='js/script.js')}}"></script>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/index.css')}}">
+    <title>Projeto Final</title>
+</head>
+<body>
+    <h1>Projeto Final</h1>
+    <div class="main">
+        <div class="left_div">
+            <h2>Preço Bitcoin</h2>
+            <button onclick="window.location.href = '/bitcoin'">Bitcoin</button>
+        </div>
+        
+        <div class="right_div">
+            <h2>Nomes (Aleatorios + Idade)</h2>
+            <button onclick="window.location.href = '/nomes'">Gerador de Nomes</button>
+        </div>
+    </div>
+    
+</body>
+</html>
